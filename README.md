@@ -18,7 +18,7 @@
     <label for="age">Age:</label>
     <input type="number" id="age" name="age" min="0">
 
-    <!-- Button section: triggers JavaScript to display input values -->
+    <!-- Button section triggers JavaScript to display input values -->
     <button type="button" id="showBtn">Show Values</button>
   </form>
 
@@ -29,9 +29,9 @@
 ```
 
 ```javascript
-// ===============================
+// 
 // Section 1: Select form elements
-// ===============================
+// 
 
 // Reference to the whole form (used for resetting fields)
 const form = document.getElementById('infoForm');
@@ -46,9 +46,9 @@ const ageInput = document.getElementById('age');
 const showBtn = document.getElementById('showBtn');
 
 
-// ==============================================
+// 
 // Section 2: Show alert when button is clicked
-// ==============================================
+// 
 
 // When the user clicks the button, display the entered name and age
 showBtn.addEventListener('click', () => {
@@ -56,9 +56,9 @@ showBtn.addEventListener('click', () => {
 });
 
 
-// ===================================================
+//
 // Section 3: Clear form when Escape key is pressed
-// ===================================================
+// 
 
 // Listen for key presses anywhere on the page
 document.addEventListener('keydown', (event) => {
